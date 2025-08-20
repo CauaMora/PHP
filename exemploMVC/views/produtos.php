@@ -5,7 +5,7 @@
 </head>
 <body>
     <h1>Produtos</h1>
-    <a href="">Novo Produto</a>
+    <a href="index.php?controle=ProdutoController&metodo=inserir">Novo Produto</a>
     <table border="1">
         <tr>
             <th>Produto</th>
@@ -23,9 +23,9 @@
                     <td>$preco</td>
                     <td>{$produto->estoque}</td>
                     <td>
-                    <a href=''>Alterar</a>
+                    <a href='index.php?controle=ProdutoController&metodo=alterar&id={$produto->id_produto}'>Alterar</a>
                     &nbsp;&nbsp;
-                    <a href=''>Excluir</a>
+                    <a href='index.php?controle=ProdutoController&metodo=excluir&id={$produto->id_produto}'>Excluir</a>
                     </td>
                 </tr>";
             }
